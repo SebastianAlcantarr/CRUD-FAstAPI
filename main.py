@@ -59,7 +59,7 @@ async def obtener_nombres():
                        for i in var]
 
             conn.close()
-            return {"LISTADO": nombres}
+            return {"LISTADO de nombres": nombres}
         except sqlite3.Error as e:
             return {f'No se puedieron obtener los datos de la base de datos: error {e}'}
 
